@@ -8,7 +8,7 @@ public class Kcombination {
         } else if (k > n) {
             return 0;
         } else {
-            return comb((n - 1), k) + comb((n - 1), (k - 1));
+            return comb(n - 1, k) + comb(n - 1, k - 1);
         }
     }
 
@@ -19,3 +19,12 @@ public class Kcombination {
         System.out.println(comb(n, k));
     }
 }
+
+/*
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java
+49
+6
+13983816
+
+Process finished with exit code 0
+ */
